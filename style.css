@@ -1,0 +1,92 @@
+/* style.css - music-player */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.player {
+    width: 350px;
+    background: #1e1e1e;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+.song-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#progress {
+    width: 100%;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+.controls button {
+    background: #1db954;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.controls button:hover {
+    background: #18a74a;
+}
+
+.controls button:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 480px) {
+    .player {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .song-title {
+        font-size: 18px;
+    }
+
+    .controls button {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .time {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .player {
+        width: 80%;
+        max-width: 400px;
+    }
+}
